@@ -102,9 +102,6 @@ sed -i 's/procd_set_param stderr 1/procd_set_param stderr 0/g' feeds/packages/ut
 # watchcat - clean config
 true > feeds/packages/utils/watchcat/files/watchcat.config
 
-# 网易云音乐
-sed -i 's/解除网易云音乐播放限制/音乐解锁/g' luci-app-unblockneteasemusic/root/usr/share/luci/menu.d/luci-app-unblockneteasemusic.json
-
 # clean up old feeds
 rm -rf feeds/luci/applications/{luci-app-aria2,luci-app-frpc,luci-app-frps,luci-app-hd-idle,luci-app-ksmbd,luci-app-natmap,luci-app-nlbwmon,luci-app-smartdns,luci-app-sqm,luci-app-upnp}
 rm -rf feeds/packages/admin/netdata
