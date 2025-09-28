@@ -11,6 +11,9 @@ git clone https://$github/sbwml/luci-app-openlist2 package/new/openlist
 rm -rf feeds/packages/utils/lrzsz
 git clone https://$github/sbwml/packages_utils_lrzsz package/new/lrzsz
 
+# 网易云音乐
+sed -i 's/解除网易云音乐播放限制/音乐解锁/g' package/new/extd/luci-app-unblockneteasemusic/root/usr/share/luci/menu.d/luci-app-unblockneteasemusic.json
+
 # 克隆immortalwrt-luci packages仓库
 git clone --depth=1 -b openwrt-24.10 https://github.com/immortalwrt/luci.git immortalwrt-luci
 cp -rf immortalwrt-luci/applications/luci-app-msd_lite feeds/luci/applications/luci-app-msd_lite
