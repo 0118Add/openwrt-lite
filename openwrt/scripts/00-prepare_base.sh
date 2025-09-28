@@ -329,7 +329,7 @@ rm -rf package/libs/zlib
 mv ../master/base-23.05/zlib package/libs/zlib
 
 # autocore
-git clone https://$github/apadpro/autocore package/system/autocore --depth 1
+git clone https://github.com/8688Add/autocore-arm package/system/autocore --depth 1
 
 # profile
 sed -i 's#\\u@\\h:\\w\\\$#\\[\\e[32;1m\\][\\u@\\h\\[\\e[0m\\] \\[\\033[01;34m\\]\\W\\[\\033[00m\\]\\[\\e[32;1m\\]]\\[\\e[0m\\]\\\$#g' package/base-files/files/etc/profile
