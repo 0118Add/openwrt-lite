@@ -158,10 +158,10 @@ git clone https://$github/openwrt/routing master/routing --depth=1
 git clone https://$github/pmkol/openwrt-llvm-toolchain master/toolchain -b gcc14 --depth=1
 
 # openwrt feeds
-git clone https://$github/pmkol/openwrt-feeds master/base-23.05 -b base-23.05 --depth=1
-#git clone https://$github/pmkol/openwrt-feeds master/extd-23.05 -b extd-23.05 --depth=1
-git clone https://$github/pmkol/openwrt-feeds master/lite-23.05 -b lite-23.05 --depth=1
-git clone https://$github/pmkol/openwrt-feeds master/archive-23.05 -b archive-23.05 --depth=1
+git clone https://$github/8688Add/openwrt-feeds master/base-23.05 -b base-23.05 --depth=1
+git clone https://$github/8688Add/openwrt-feeds master/extd-23.05 -b extd-23.05 --depth=1
+git clone https://$github/8688Add/openwrt-feeds master/lite-23.05 -b lite-23.05 --depth=1
+git clone https://$github/8688Add/openwrt-feeds master/archive-23.05 -b archive-23.05 --depth=1
 [ "$(whoami)" = "runner" ] && endgroup
 
 # openwrt lite
