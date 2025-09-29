@@ -16,3 +16,7 @@ git clone https://$github/zfdx123/msd_lite package/new/msd_lite
 
 # luci-app-dockerman
 git clone https://$github/sirpdboy/luci-app-dockerman package/new/luci-app-dockerman
+
+# luci-app-unblockneteasemusic
+rm -rf package/new/extd/luci-app-unblockneteasemusic
+git clone https://$github/UnblockNeteaseMusic/luci-app-unblockneteasemusic package/new/luci-app-unblockneteasemusic
