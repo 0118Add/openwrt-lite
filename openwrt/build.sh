@@ -158,17 +158,17 @@ git clone https://$github/openwrt/routing master/routing --depth=1
 git clone https://$github/pmkol/openwrt-llvm-toolchain master/toolchain -b gcc14 --depth=1
 
 # openwrt feeds
-git clone https://$github/8688Add/openwrt-feeds master/base-23.05 -b base-23.05 --depth=1
-git clone https://$github/8688Add/openwrt-feeds master/extd-23.05 -b extd-23.05 --depth=1
-git clone https://$github/8688Add/openwrt-feeds master/lite-23.05 -b lite-23.05 --depth=1
-git clone https://$github/8688Add/openwrt-feeds master/archive-23.05 -b archive-23.05 --depth=1
+git clone https://$github/pmkol/openwrt-feeds master/base-23.05 -b base-23.05 --depth=1
+git clone https://$github/pmkol/openwrt-feeds master/extd-23.05 -b extd-23.05 --depth=1
+git clone https://$github/pmkol/openwrt-feeds master/lite-23.05 -b lite-23.05 --depth=1
+git clone https://$github/pmkol/openwrt-feeds master/archive-23.05 -b archive-23.05 --depth=1
 [ "$(whoami)" = "runner" ] && endgroup
 
 # openwrt lite
 if [ -d openwrt ]; then
     cd openwrt
     echo "$CURRENT_DATE" > version.date
-    [ "$GITHUB_REPO" = "0118Add/openwrt-lite" ] && curl -Os $OPENWRT_KEY && tar zxf key.tar.gz && rm -f key.tar.gz && cat key-build.pub
+    [ "$GITHUB_REPO" = "pmkol/openwrt-lite" ] && curl -Os $OPENWRT_KEY && tar zxf key.tar.gz && rm -f key.tar.gz && cat key-build.pub
 else
     echo -e "${RED_COLOR}Failed to download source code${RES}"
     exit 1
@@ -204,7 +204,7 @@ if [ -f ../dl.gz ]; then
 fi
 
 # config version
-([ "$GITHUB_REPO" != "0118Add/openwrt-lite" ] || [ "$DEV_BUILD" = "y" ]) && export CONFIG_CUSTOM=y
+([ "$GITHUB_REPO" != "pmkol/openwrt-lite" ] || [ "$DEV_BUILD" = "y" ]) && export CONFIG_CUSTOM=y
 if [ "$CONFIG_CUSTOM" = "y" ]; then
     export cfg_ver=custom
     export cfg_cmd="eval awk '/### APPS/{exit} {print}'"
