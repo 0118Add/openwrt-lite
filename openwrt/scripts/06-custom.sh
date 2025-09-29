@@ -16,6 +16,11 @@ git clone https://$github/zfdx123/msd_lite package/new/msd_lite
 
 # luci-app-dockerman
 git clone https://$github/sirpdboy/luci-app-dockerman package/new/luci-app-dockerman
+sed -i 's/"admin",/"admin","services",/g' package/new/luci-app-dockerman/luasrc/controller/*.lua
+sed -i 's/"admin/"admin\/services/g' package/new/luci-app-dockerman/luasrc/model/*.lua
+sed -i 's/"admin/"admin\/services/g' package/new/luci-app-dockerman/luasrc/model/cbi/dockerman/*.lua
+sed -i 's/"admin/"admin\/services/g' package/new/luci-app-dockerman/luasrc/view/dockerman/*.htm
+sed -i 's/"admin/"admin\/services/g' package/new/luci-app-dockerman/luasrc/view/dockerman/cbi/*.htm
 
 # luci-app-unblockneteasemusic
 rm -rf package/new/extd/luci-app-unblockneteasemusic
