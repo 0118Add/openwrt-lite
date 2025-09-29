@@ -12,11 +12,11 @@ rm -rf feeds/packages/utils/lrzsz
 git clone https://$github/sbwml/packages_utils_lrzsz package/new/lrzsz
 
 # msd_lite
-git clone https://$github/maxmib/luci-app-msd-lite package/new/luci-app-msd_lite
+git clone https://github.com/maxmib/luci-app-msd-lite package/new/luci-app-msd_lite
 
 # luci-app-dockerman
-git clone https://$github/lisaac/luci-app-dockerman package/new/luci-app-dockerman
+git clone https://github.com/lisaac/luci-app-dockerman package/new/luci-app-dockerman
 
 # luci-app-unblockneteasemusic
 rm -rf package/new/extd/luci-app-unblockneteasemusic
-git clone https://$github/8688Add/luci-app-unblockneteasemusic package/new/luci-app-unblockneteasemusic
+git clone https://github.com/8688Add/luci-app-unblockneteasemusic package/new/luci-app-unblockneteasemusic
