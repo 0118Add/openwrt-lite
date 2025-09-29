@@ -10,3 +10,5 @@ git clone https://$github/sbwml/luci-app-openlist2 package/new/openlist
 # lrzsz - add patched package
 rm -rf feeds/packages/utils/lrzsz
 git clone https://$github/sbwml/packages_utils_lrzsz package/new/lrzsz
+
+rm -rf package/new/extd/luci-app-unblockneteasemusic
