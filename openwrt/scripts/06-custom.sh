@@ -19,4 +19,4 @@ git clone https://$github/sirpdboy/luci-app-dockerman package/new/luci-app-docke
 
 # luci-app-unblockneteasemusic
 rm -rf package/new/extd/luci-app-unblockneteasemusic
-git clone https://$github/UnblockNeteaseMusic/luci-app-unblockneteasemusic package/new/luci-app-unblockneteasemusic
+git clone https://$github/8688Add/luci-app-unblockneteasemusic package/new/luci-app-unblockneteasemusic
