@@ -15,7 +15,7 @@ git clone https://$github/sbwml/packages_utils_lrzsz package/new/lrzsz
 git clone https://$github/zfdx123/msd_lite package/new/msd_lite
 
 # luci-app-dockerman
-git clone https://$github/sirpdboy/luci-app-dockerman package/new/luci-app-dockerman
+git clone https://$github/lisaac/luci-app-dockerman package/new/luci-app-dockerman
 
 # luci-app-unblockneteasemusic
 rm -rf package/new/extd/luci-app-unblockneteasemusic
