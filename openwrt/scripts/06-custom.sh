@@ -14,8 +14,9 @@ git clone https://$github/sbwml/packages_utils_lrzsz package/new/lrzsz
 # msd_lite
 #git clone https://github.com/maxmib/luci-app-msd-lite package/new/luci-app-msd_lite
 
-# luci-app-dockerman
-#git clone https://github.com/lisaac/luci-app-dockerman package/new/luci-app-dockerman
+# sing-box
+rm -rf package/new/lite/sing-box
+git clone https://github.com/0118Add/openwrt_helloworld package/new/openwrt_helloworld
 
 # luci-app-unblockneteasemusic
 rm -rf package/new/extd/luci-app-unblockneteasemusic
