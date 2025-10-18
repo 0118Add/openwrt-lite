@@ -16,7 +16,7 @@ git clone https://$github/sbwml/packages_utils_lrzsz package/new/lrzsz
 
 # sing-box
 rm -rf package/new/lite/sing-box
-git clone https://github.com/0118Add/openwrt_helloworld package/new/openwrt_helloworld
+git clone https://github.com/sbwml/openwrt_helloworld package/new/openwrt_helloworld
 
 # luci-app-unblockneteasemusic
 rm -rf package/new/extd/luci-app-unblockneteasemusic
