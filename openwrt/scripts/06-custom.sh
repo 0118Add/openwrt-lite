@@ -20,4 +20,4 @@ git clone https://github.com/sbwml/openwrt_helloworld package/new/openwrt_hellow
 
 # luci-app-unblockneteasemusic
 rm -rf package/new/extd/luci-app-unblockneteasemusic
-git clone https://github.com/8688Add/luci-app-unblockneteasemusic package/new/luci-app-unblockneteasemusic
+git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic package/new/luci-app-unblockneteasemusic
